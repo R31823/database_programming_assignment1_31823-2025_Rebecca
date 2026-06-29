@@ -18,6 +18,7 @@ create table Orders(order_id int primary key, order_date date, quantity int, cli
 <img width="1366" height="511" alt="image" src="https://github.com/user-attachments/assets/4802bb97-b29b-4586-966f-00fa0f6982e2" />
 
 ## ER Diagram
+<img width="1366" height="707" alt="image" src="https://github.com/user-attachments/assets/f9fabb17-11df-43d2-849c-81cb103d0332" />
 
 ## CTE Implementations
 ### Simple CTE
