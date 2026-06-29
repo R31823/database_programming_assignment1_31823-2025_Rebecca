@@ -21,20 +21,22 @@ create table Orders(order_id int primary key, order_date date, quantity int, cli
 ## CTE Implementations
 ### Simple CTE
 <img width="659" height="568" alt="image" src="https://github.com/user-attachments/assets/abba8966-4086-4893-a541-30af52af3616" />
-
+This query identifies high-value products priced above 500.
 ### Multiple CTEs
 <img width="803" height="334" alt="image" src="https://github.com/user-attachments/assets/2c14473f-acee-4a6e-ae97-0ca18072f4a3" />
-
+Uses two CTEs to first calculate total sales per product and then filter for those with high volume
 ### Recursive CTE
-
+<img width="1003" height="375" alt="image" src="https://github.com/user-attachments/assets/e1e19b94-48c1-4873-a0a3-26f30bd5ae3e" />
+This query tracks a 3-month payment cycle for a specific product
+//Recursive wasn't used due to it not being by my oracle.
 ### CTE with Aggregation
 <img width="777" height="312" alt="image" src="https://github.com/user-attachments/assets/f89954e2-47f7-45f8-a315-9a397a5eeb25" />
-
+Calculates total expenditure per client.
 ### CTE combined with JOIN operations
 <img width="1172" height="534" alt="image" src="https://github.com/user-attachments/assets/89ec476e-a110-4d71-9700-90391efa7611" />
 
 ## Window Functions Implementations
-### Ranking Functions
+### Ranking Functions 
 ROW_NUMBER() 
 <img width="1187" height="284" alt="image" src="https://github.com/user-attachments/assets/b0d9c8bb-ea0c-4f04-951b-19eb1aaf6bb0" />
 
@@ -82,7 +84,7 @@ cume_dist()
 ### Pescriptive Analysis
 
 ## References
-Oracle SQL Documentatiom
-Course lecture notes
+- Oracle SQL Documentatiom
+- Course lecture notes
 ## Academic Integrity References
 I hereby state that this is a work of my own.
