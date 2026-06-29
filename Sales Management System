@@ -11,4 +11,35 @@ create table Orders(order_id int primary key, order_date date, quantity int, cli
 
 ## ER Diagram
 
-##CTE Implementation
+## CTE Implementations
+### Simple CTE
+
+### Multiple CTEs
+
+### Recursive CTE
+
+### CTE with Aggregation
+
+### CTE combined with JOIN operations
+
+## Window Functions Implementations
+### Ranking Functions
+
+### Aggregate Window Functions
+
+### Navigation Functions
+
+### Distribution Functions 
+
+## Analysis and Findings
+### Descriptive Analysis
+
+### Diagnostic Analysis
+
+### Pescriptive Analysis
+
+## References
+Oracle SQL Documentatiom
+Course lecture notes
+## Academic Integrity References
+I hereby state that this is a work of my own.
