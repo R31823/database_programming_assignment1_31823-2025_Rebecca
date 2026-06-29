@@ -11,6 +11,7 @@ This README provides an overview of the Sales management database, designed for 
 create table Clients(client_id int primary key, client_name varchar(50), email varchar(50), location varchar(40));
 create table Products(product_id int primary key, product_name varchar(50), category varchar(50), price int);
 create table Orders(order_id int primary key, order_date date, quantity int, client_id int,product_id,int constraint fk_Clients_Orders foreign key (client_id) references Clients(client_id), constraint fk_Products_Orders foreign key (product_id) references Products(product_id));
+<img width="1366" height="438" alt="image" src="https://github.com/user-attachments/assets/2b4e863b-546f-4de8-8d2b-79c5b4e24c2a" />
 
 
 ## ER Diagram
