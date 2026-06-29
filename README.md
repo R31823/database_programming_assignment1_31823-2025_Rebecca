@@ -1,5 +1,5 @@
 # database_programming_assignment1_31823-2025_Rebecca
-Individual Assignment I: CTEs &amp; SQL Window Functions Project
+Individual Assignment I: CTEs & SQL Window Functions Project
 
 # Business scenario: Sales Management System ( Usind Oracle as RDBMS)
 
@@ -7,10 +7,11 @@ This README provides an overview of the Sales management database, designed for 
 
 ## Database Schema
 ### Clients , Products , Orders TABLES 
-
+```sql
 create table Clients(client_id int primary key, client_name varchar(50), email varchar(50), location varchar(40));
 create table Products(product_id int primary key, product_name varchar(50), category varchar(50), price int);
 create table Orders(order_id int primary key, order_date date, quantity int, client_id int,product_id,int constraint fk_Clients_Orders foreign key (client_id) references Clients(client_id), constraint fk_Products_Orders foreign key (product_id) references Products(product_id));
+```
 <img width="1366" height="438" alt="image" src="https://github.com/user-attachments/assets/2b4e863b-546f-4de8-8d2b-79c5b4e24c2a" />
 <img width="971" height="313" alt="image" src="https://github.com/user-attachments/assets/5b03ad1a-793a-400b-9572-1ef182a28969" />
 <img width="1358" height="723" alt="image" src="https://github.com/user-attachments/assets/9b93b609-72d0-4c92-8ebb-a5f1373480b9" />
@@ -34,7 +35,7 @@ This query tracks a 3-month payment cycle for a specific product
 Calculates total expenditure per client.
 ### CTE combined with JOIN operations
 <img width="1172" height="534" alt="image" src="https://github.com/user-attachments/assets/89ec476e-a110-4d71-9700-90391efa7611" />
-
+Identify the best-selling product in each category.
 ## Window Functions Implementations
 ### Ranking Functions 
 ROW_NUMBER() 
@@ -78,11 +79,11 @@ cume_dist()
 
 ## Analysis and Findings
 ### Descriptive Analysis
-
+There are currently three clients (Alice, Bob, and Charlie) who have each spent the same total amount (8560) in the system . The highest-priced item in the store is the Laptop at 1200, followed by the Smartphone at 800  Most orders occurred on June 26, and the Toaster is currently the only product that has not been sold.
 ### Diagnostic Analysis
-
+The spending is balanced because each client purchased one high-value electronic item. The "Top Products" query showed no results because no single product reached the 50-unit sales threshold, indicating that while revenue is high due to prices, the total volume of items sold is still relatively low.
 ### Pescriptive Analysis
-
+The company should focus on marketing the Toaster to increase its sales volume. Since the current revenue is heavily dependent on a few expensive electronics, the business should try to sell more of the lower-priced appliances to create a more balanced income stream.
 ## References
 - Oracle SQL Documentatiom
 - Course lecture notes
